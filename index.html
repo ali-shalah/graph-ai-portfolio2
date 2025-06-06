@@ -4,26 +4,90 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Generative AI for Work & Research – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* Bluish–grey palette */
-  --primary: #2d6cdf;
-  --secondary: #1e3a5f;
-  --light: #f5f7fa;
-  --dark: #343a40;
+  /* Shade Zahrai–inspired palette */
+  --primary-start: #ff4f7d; /* vibrant pink */
+  --primary-end: #6e49ff;  /* rich violet */
+  --secondary: #452c63;    /* deep purple for nav & accents */
+  --light: #ffffff;        /* clean white background */
+  --dark: #333333;         /* dark charcoal text */
 }
-body{font-family: Arial, sans-serif;margin:0;color:var(--dark);background:var(--light);line-height:1.6;}
-header{background:var(--primary);color:#fff;padding:2rem 1rem;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.15);} 
-nav{background:var(--secondary);display:flex;justify-content:center;gap:2rem;padding:0.5rem 1rem;position:sticky;top:0;z-index:1000;}
-nav a{color:#fff;text-decoration:none;font-weight:bold;transition:opacity 0.2s ease;}
-nav a:hover{opacity:0.75;}
-section{max-width:900px;margin:2rem auto;padding:0 1rem;}
-h2{color:var(--secondary);margin-top:0;}
+body{
+  font-family:'Poppins',sans-serif;
+  margin:0;
+  color:var(--dark);
+  background:var(--light);
+  line-height:1.6;
+}
+header{
+  background:linear-gradient(135deg,var(--primary-start),var(--primary-end));
+  color:#fff;
+  padding:3rem 1rem 2.5rem;
+  text-align:center;
+  box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+header h1{font-size:2.25rem;margin:0 0 0.5rem;font-weight:700;letter-spacing:-0.5px;}
+header p{font-size:1.1rem;margin:0;font-weight:400;}
+nav{
+  background:var(--secondary);
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:2rem;
+  padding:0.75rem 1rem;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  transition:opacity 0.2s ease;
+}
+nav a:hover{opacity:0.8;}
+section{
+  max-width:960px;
+  margin:3rem auto;
+  padding:0 1rem;
+}
+h2{
+  color:var(--secondary);
+  margin-top:0;
+  font-size:1.75rem;
+  font-weight:700;
+}
 ul{padding-left:1.25rem;}
-.module-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;}
-.card{background:#fff;border:1px solid #d3d9df;border-radius:8px;padding:1rem;box-shadow:0 2px 4px rgba(0,0,0,0.05);}
-.profile-img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid var(--secondary);float:left;margin:0 1rem 1rem 0;}
-footer{text-align:center;padding:2rem 0;font-size:0.9rem;color:#6c757d;}
+.module-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.25rem;
+}
+.card{
+  background:#fff;
+  border:1px solid #e5e5f0;
+  border-radius:10px;
+  padding:1.25rem;
+  box-shadow:0 2px 6px rgba(0,0,0,0.06);
+}
+.profile-img{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid var(--secondary);
+  float:left;
+  margin:0 1.25rem 1.25rem 0;
+}
+iframe{width:100%;border:0;}
+footer{
+  text-align:center;
+  padding:2rem 0 3rem;
+  font-size:0.9rem;
+  color:#666c7a;
+}
 </style>
 </head>
 <body>
@@ -36,6 +100,7 @@ footer{text-align:center;padding:2rem 0;font-size:0.9rem;color:#6c757d;}
   <a href="#about-me">About Me</a>
   <a href="#about-course">About the Course</a>
   <a href="#submissions">Weekly Submissions</a>
+  <a href="#consultation">Contact for Consultation</a>
 </nav>
 
 <section id="about-me">
@@ -43,16 +108,16 @@ footer{text-align:center;padding:2rem 0;font-size:0.9rem;color:#6c757d;}
   <img src="https://github.com/ali-shalah/graph-ai-portfolio2/blob/main/Random%20person.jpg?raw=true" alt="Profile photo of Sajjad Jasim" class="profile-img">
   <p>I'm a PhD-level epidemiologist with seven years of combined laboratory and applied research experience, specializing in global disease epidemiology, vaccine science, and policy. My work bridges rigorous statistical analysis—including longitudinal and survival methods—with real-world program evaluation.</p>
   <p>Technical skills include R, SAS, and STATA for data analysis, alongside program planning, monitoring, and evaluation expertise. I’m fluent in French and Arabic and have practical knowledge of Swahili.</p>
-  <p>Current position: Doctoral Researcher, University of Pittsburgh Graduate School of Public Health (dissertation defense expected May 2025).</p>
+  <p>Current position: Doctoral Researcher, University of Pittsburgh Graduate School of Public Health.</p>
 </section>
 
 <section id="about-course">
   <h2>About the Course</h2>
-  <p><strong>Generative AI for Work & Research</strong> is a 2-month guided program delivered by GRAPH Courses. It combines weekly live workshops, hands-on help sessions, private community forums, personalized feedback, and capstone coaching. Graduates earn a shareable certificate and lifetime access to tutorial materials.</p>
+  <p><strong>Generative AI for Work & Research</strong> is a 2‑month guided program delivered by GRAPH Courses. It combines weekly live workshops, hands‑on help sessions, private community forums, personalized feedback, and capstone coaching. Graduates earn a shareable certificate and lifetime access to tutorial materials.</p>
   
   <h3>Bootcamp Features</h3>
   <ul>
-    <li>No-code AI tools for task automation</li>
+    <li>No‑code AI tools for task automation</li>
     <li>Live workshops & help sessions</li>
     <li>Personalized assessment feedback</li>
     <li>Capstone project mentoring</li>
@@ -61,12 +126,12 @@ footer{text-align:center;padding:2rem 0;font-size:0.9rem;color:#6c757d;}
 
   <h3>Course Modules</h3>
   <div class="module-grid">
-    <div class="card"><h4>Module 1 – Websites, Documents & Presentations</h4><ul><li>How LLMs are trained & major providers</li><li>Generating Markdown, LaTeX, HTML</li><li>No-code research websites</li><li>AI tools for scientific communication</li></ul></div>
-    <div class="card"><h4>Module 2 – AI-Automated Data Analysis</h4><ul><li>Quick data analysis with ChatGPT Code Interpreter</li><li>Automated dashboards with TheBricks</li><li>Dataset processing with Julius</li><li>Automated reports & visualizations</li></ul></div>
+    <div class="card"><h4>Module 1 – Websites, Documents & Presentations</h4><ul><li>How LLMs are trained & major providers</li><li>Generating Markdown, LaTeX, HTML</li><li>No‑code research websites</li><li>AI tools for scientific communication</li></ul></div>
+    <div class="card"><h4>Module 2 – AI‑Automated Data Analysis</h4><ul><li>Quick data analysis with ChatGPT Code Interpreter</li><li>Automated dashboards with TheBricks</li><li>Dataset processing with Julius</li><li>Automated reports & visualizations</li></ul></div>
     <div class="card"><h4>Module 3 – GenAI for Research & Text Analysis</h4><ul><li>Efficient literature reviews</li><li>Text classification & sentiment analysis</li><li>Knowledge maps & summarization workflows</li></ul></div>
-    <div class="card"><h4>Module 4 – Custom GPTs & Chatbots</h4><ul><li>LLM architecture, context windows, RAG</li><li>Building domain-specific GPTs</li><li>Interactive chatbots with Botpress</li></ul></div>
+    <div class="card"><h4>Module 4 – Custom GPTs & Chatbots</h4><ul><li>LLM architecture, context windows, RAG</li><li>Building domain‑specific GPTs</li><li>Interactive chatbots with Botpress</li></ul></div>
     <div class="card"><h4>Module 5 – AI for Task Automation</h4><ul><li>Email response automations</li><li>AI agents for literature monitoring</li><li>Browser control workflows</li></ul></div>
-    <div class="card"><h4>Module 6 – GenAI for Communication & Outreach</h4><ul><li>AI-generated research summaries</li><li>Scientific figures & diagrams</li><li>Video abstracts with minimal effort</li></ul></div>
+    <div class="card"><h4>Module 6 – GenAI for Communication & Outreach</h4><ul><li>AI‑generated research summaries</li><li>Scientific figures & diagrams</li><li>Video abstracts with minimal effort</li></ul></div>
     <div class="card"><h4>Module 7 – Capstone Project & Showcase</h4><ul><li>Peer feedback & coaching</li><li>Final project presentation</li><li>Public Q&A session</li></ul></div>
   </div>
 
@@ -76,7 +141,7 @@ footer{text-align:center;padding:2rem 0;font-size:0.9rem;color:#6c757d;}
     <li>Workshop assignments – 35%</li>
     <li>Attendance & participation – 10%</li>
     <li>Final project – 40%</li>
-    <li>Passing grade: 80% (attend ≥5 workshops)</li>
+    <li>Passing grade: 80% (attend ≥5 workshops)</li>
   </ul>
 </section>
 
@@ -84,23 +149,28 @@ footer{text-align:center;padding:2rem 0;font-size:0.9rem;color:#6c757d;}
   <h2>My Weekly Submissions</h2>
   <p>Links will appear here as the course progresses.</p>
   <ul>
-    <li>Week 1 – <em>coming soon</em></li>
-    <li>Week 2 – <em>coming soon</em></li>
-    <li>Week 3 – <a href="https://drive.google.com/file/d/1bI0KTkr1bphBNskOeiwkkVTSbmxd26CA/view?usp=sharing" target="_blank" rel="noopener">Data Analyst Job Market Analysis Report</a></li>
-    <li>Week 4 – <em>coming soon</em></li>
-    <li>Week 5 – <em>coming soon</em></li>
-    <li>Week 6 – <em>coming soon</em></li>
-    <li>Week 7 – <em>coming soon</em></li>
+    <li>Week 1 – <em>coming soon</em></li>
+    <li>Week 2 – <em>coming soon</em></li>
+    <li>Week 3 – <a href="https://drive.google.com/file/d/1bI0KTkr1bphBNskOeiwkkVTSbmxd26CA/view?usp=sharing" target="_blank" rel="noopener">Data Analyst Job Market Analysis Report</a></li>
+    <li>Week 4 – <em>coming soon</em></li>
+    <li>Week 5 – <em>coming soon</em></li>
+    <li>Week 6 – <em>coming soon</em></li>
+    <li>Week 7 – <em>coming soon</em></li>
   </ul>
 </section>
 
+<section id="consultation">
+  <h2>Contact for Consultation</h2>
+  <p>If you'd like personalized guidance or project consultation, please fill out the form below:</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOn4hIscfIRsoK9fXmwaR_v0hqYBkJJrqzBGa2hwm3RecJfA/viewform?embedded=true" height="824" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+
 <footer>
-  <p>&copy; 2025 Sajjad Jasim | Generative AI for Work & Research Portfolio</p>
+  <p>&copy; 2025 Sajjad Jasim | Generative AI for Work & Research Portfolio</p>
 </footer>
 
 <!-- Botpress Chatbot Integration -->
 <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/06/05/18/20250605184456-5Q9ZA4IN.js"></script>
-
 </body>
 </html>
